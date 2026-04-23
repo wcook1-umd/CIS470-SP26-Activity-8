@@ -190,8 +190,6 @@ If we consider that in the Calendar call graph with units replaced by numbers (n
 
 - Add ***the Mock getPrevious function*** to the Integration Test (Steps are described above). Note that a placeholder is added in the integration test folder.
 
-- ***Draw the Functional decomposition (top down)*** of the Calendar Program (check slides for the diagram). Include the new functions in the diagram.
-
 - <mark>Implement and add a ***getPrevious Day actual function*** to the Calendar Program. Note that an empty function is added in the modules folder.</mark>
 
 - Add the ***unit test for the getPreviousDay function*** (use the Jest file for getNextDate and modify it). Note that a placeholder is added in the unit test folder. As you can see in the figure, the test does not cover any lines or functions currently.
