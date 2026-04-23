@@ -1,4 +1,4 @@
-const isFriday = require('./isFriday')
+const {isFriday} = require('./isFriday')
 function friday13th(currentMonth, currentDay, currentYear) {
 
     let month = currentMonth;
@@ -25,4 +25,4 @@ function friday13th(currentMonth, currentDay, currentYear) {
     }
 }
 
-module.exports = friday13th;
+module.exports = {friday13th};

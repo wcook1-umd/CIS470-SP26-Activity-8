@@ -1,4 +1,4 @@
-const friday13th = require('../modules/friday13th');
+const {friday13th} = require('../modules/friday13th');
 
 describe('friday13th function', () => {
     test('returns the first upcoming Friday the 13th', () => {

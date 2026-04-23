@@ -1,5 +1,5 @@
 
-const getNextDate = require('../modules/getNextDate');
+const {getNextDate} = require('../modules/getNextDate');
 
 test('Next date test', () => {
     expect(getNextDate(4, 15, 2024)).toEqual({ month: 4, day: 16, year: 2024 });

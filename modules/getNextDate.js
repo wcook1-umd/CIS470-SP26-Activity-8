@@ -1,4 +1,4 @@
-const lastDayOfMonth = require('./lastDayOfMonth');
+const {lastDayOfMonth} = require('./lastDayOfMonth');
 
 function getNextDate(month, day, year) {
     const lastDay = lastDayOfMonth(month, year);
@@ -13,4 +13,4 @@ function getNextDate(month, day, year) {
     }
 }
 
-module.exports = getNextDate;
+module.exports = {getNextDate};

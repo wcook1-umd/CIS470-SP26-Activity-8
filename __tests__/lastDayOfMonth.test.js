@@ -1,4 +1,4 @@
-const lastDayOfMonth = require('../modules/lastDayOfMonth');
+const {lastDayOfMonth} = require('../modules/lastDayOfMonth');
 
 test('Last day of month test', () => {
     expect(lastDayOfMonth(2, 2020)).toBe(29);

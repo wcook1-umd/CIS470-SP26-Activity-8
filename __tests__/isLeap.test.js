@@ -1,5 +1,5 @@
 // isLeap.test.js
-const isLeap = require('../modules/isLeap');
+const {isLeap} = require('../modules/isLeap');
 
 test('Leap year test', () => {
     expect(isLeap(2020)).toBe(true);

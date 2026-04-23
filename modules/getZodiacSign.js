@@ -44,4 +44,4 @@ function getZodiacSign(month, day) {
     }
 }
 
-module.exports = getZodiacSign;
+module.exports = {getZodiacSign};

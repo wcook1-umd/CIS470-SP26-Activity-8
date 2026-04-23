@@ -185,25 +185,31 @@ If we consider that in the Calendar call graph with units replaced by numbers (n
 
 # Activity Requirements
 
-## Requirement 1 (40 points)
+## Requirement 1 (50 points)
 
 
 - Add ***the Mock getPrevious function*** to the Integration Test (Steps are described above). Note that a placeholder is added in the integration test folder.
 
 - ***Draw the Functional decomposition (top down)*** of the Calendar Program (check slides for the diagram). Include the new functions in the diagram.
 
-- Implement and add a ***getPrevious Day actual function*** to the Calendar Program. Note that an empty function is added in the modules folder.
+- <mark>Implement and add a ***getPrevious Day actual function*** to the Calendar Program. Note that an empty function is added in the modules folder.</mark>
 
-- Add the ***unit test for the getPreviousDay function*** (use the Jest file for getNextDate and modify it). Note that a placeholder is added in the unit test folder.
+- Add the ***unit test for the getPreviousDay function*** (use the Jest file for getNextDate and modify it). Note that a placeholder is added in the unit test folder. As you can see in the figure, the test does not cover any lines or functions currently.
+
+![tree view](./img/npm_test.png)
 
 - Require and Invoke the ***getPreviousDay function*** to main function. Note that a placeholder is added in the main function.
 
+![invoke getPreviousDat](./img/invoke_in_main_function.png)
 
-## Requirement 2 (20 points)
 
-In the first step, draw function Integration graph (call graph) for the main function (no messages in the call graph).
+## Requirement 2 (25 points)
 
-## Requirement 3 (20 points)
+In the first step, draw function Integration graph (call graph) for the main function (no messages in the call graph). Refer to the slides of Week 13 for the call graphs.
+
+![call graph](./img/callGraph.png)
+
+## Requirement 3 (25 points)
 
 Complete the following table:
 
@@ -215,17 +221,6 @@ Complete the following table:
 | 4    |                 |              |            |
 
 ...
-
-
-## Requirement 4, Find the MM-Complexity (20 points)
-
-1. You need to draw the message call graph for the main function: See example below.
-
-![MM-Complexity](./img/MM-Complexity.png)
-
-2. Use the Cyclomatic Complexity metric to find the MM-Complexity: V(G) = e – n + 2
-
-Submit the results in the form of a Zip file of the code and MarkDown or Word Document in myCourses.
 
 
 ## Final Note: It is OK if your tests do not have full coverage in this activity.

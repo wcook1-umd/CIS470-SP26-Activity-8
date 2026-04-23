@@ -1,4 +1,4 @@
-const getDayOfWeek = require('../modules/getDayOfWeek');
+const {getDayOfWeek} = require('../modules/getDayOfWeek');
 
 test('Day of week test', () => {
     expect(getDayOfWeek(4, 15, 2024)).toBe('Monday');

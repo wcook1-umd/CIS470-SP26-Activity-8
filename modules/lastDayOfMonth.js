@@ -1,4 +1,4 @@
-const isLeap = require('./isLeap');
+const {isLeap} = require('./isLeap');
 
 function lastDayOfMonth(month, year) {
     let FebDays =28
@@ -9,4 +9,4 @@ function lastDayOfMonth(month, year) {
     return daysInMonth[month - 1];
 }
 
-module.exports = lastDayOfMonth;
+module.exports = {lastDayOfMonth};

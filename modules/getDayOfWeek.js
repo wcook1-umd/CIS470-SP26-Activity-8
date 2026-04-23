@@ -5,4 +5,4 @@ function getDayOfWeek(month, day, year) {
     return days[date.getDay()];
 }
 
-module.exports = getDayOfWeek;
+module.exports = {getDayOfWeek};

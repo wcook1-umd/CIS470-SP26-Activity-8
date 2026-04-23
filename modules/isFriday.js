@@ -1,4 +1,4 @@
-const getDayOfWeek = require('./getDayOfWeek');
+const {getDayOfWeek} = require('./getDayOfWeek');
 
 function isFriday(month, day, year) {
     const result = getDayOfWeek(month, day, year)
@@ -10,4 +10,4 @@ function isFriday(month, day, year) {
     }
 }
 
-module.exports = isFriday;
+module.exports = {isFriday};

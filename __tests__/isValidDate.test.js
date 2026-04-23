@@ -1,4 +1,4 @@
-const isValidDate = require('../modules/isValidDate'); // Assuming this is the path to your function
+const {isValidDate} = require('../modules/isValidDate'); // Assuming this is the path to your function
 
 describe('isValidDate function', () => {
   // Test cases for invalid dates

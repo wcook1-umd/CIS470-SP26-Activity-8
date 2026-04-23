@@ -5,4 +5,4 @@ function isLeap(year) {
         return false; // It's not a leap year
       }
 }
-module.exports = isLeap;
+module.exports = {isLeap};

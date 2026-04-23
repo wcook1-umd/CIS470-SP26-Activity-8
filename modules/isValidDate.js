@@ -1,4 +1,4 @@
-const lastDayOfMonth = require('./lastDayOfMonth');
+const {lastDayOfMonth} = require('./lastDayOfMonth');
 
 function isValidDate(mm, dd, yyyy) {
     
@@ -16,4 +16,4 @@ function isValidDate(mm, dd, yyyy) {
     return true;
   }
 
-module.exports = isValidDate;
+module.exports = {isValidDate};

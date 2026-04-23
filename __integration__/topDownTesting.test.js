@@ -1,52 +1,52 @@
 // Importing the main function
-const main = require('../main');
+const {main} = require('../main');
 
 
 // Step 1: Making Stub Functions for all modules used by the main function
 
 // Stub function for isValidDate
 
-jest.mock('../modules/isValidDate', () => ({
-  isValidDate: jest.fn().mockReturnValue(true)
-}))
+jest.mock('../modules/isValidDate', () => 
+  ({isValidDate: jest.fn().mockReturnValue(true)})
+);
 
 
 // Stub function for getNextDate
-jest.mock('../modules/getNextDate', () => ({
-  getNextDate: jest.fn().mockImplementation((month, day, year) => {
+jest.mock('../modules/getNextDate', () =>
+  ({getNextDate: jest.fn().mockImplementation((month, day, year) => {
     return { month: 4, day: 18, year: 2024 }; // Mocked output for 4/18/2024
-  })
-}));
+  })})
+);
+
+/*****************************/
+/*** Activity Requirement ***/
+// Stub function for getPreviousDate (1)
+// this part needs to be completed
+/*****************************/
 
 
 
-// Stub function for getPreviousDate
-jest.mock('../modules/getPreviousDate', () => ({
-  getPreviousDate: jest.fn().mockImplementation((month, day, year) => {
-    // missing part
-  })
-}));
 
 // Stub function for getDayOfWeek
-jest.mock('../modules/getDayOfWeek', () => ({
-  getDayOfWeek: jest.fn().mockReturnValue('Wednesday') // Mocked output for Wednesday (4/17/2024)
-}));
+jest.mock('../modules/getDayOfWeek', () =>
+  ({getDayOfWeek: jest.fn().mockReturnValue('Wednesday')}) // Mocked output for Wednesday (4/17/2024)
+);
 
 // Stub function for getZodiacSign
-jest.mock('../modules/getZodiacSign', () => ({
-  getZodiacSign: jest.fn().mockReturnValue('Aries') // Mocked output for Aries (4/16/2024)
-}));
+jest.mock('../modules/getZodiacSign', () =>
+  ({getZodiacSign: jest.fn().mockReturnValue('Aries')}) // Mocked output for Aries (4/16/2024)
+);
 
 // Stub function for friday13th
-jest.mock('../modules/friday13th', () => ({
-  friday13th: jest.fn().mockReturnValue('9/13/2024') // Mocked output for the first Friday 13th (9/13/2024)
-}));
+jest.mock('../modules/friday13th', () =>
+  ({friday13th: jest.fn().mockReturnValue('9/13/2024')}) // Mocked output for the first Friday 13th (9/13/2024)
+);
 
 
 // Stub function for lastDayOfMonth
-jest.mock('../modules/lastDayOfMonth', () => ({
-  lastDayOfMonth: jest.fn().mockReturnValue(30) // Mocked output for the first Friday 13th (9/13/2024)
-}));
+jest.mock('../modules/lastDayOfMonth', () =>
+  ({lastDayOfMonth: jest.fn().mockReturnValue(30)}) // Mocked output for the first Friday 13th (9/13/2024)
+);
 
 
 // Step 2: Test the main function

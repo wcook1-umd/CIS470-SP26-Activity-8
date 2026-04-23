@@ -1,4 +1,4 @@
-const isFriday = require('../modules/isFriday'); // Assuming this is the path to your function
+const {isFriday} = require('../modules/isFriday'); // Assuming this is the path to your function
 
 
 describe('isFriday function', () => {
