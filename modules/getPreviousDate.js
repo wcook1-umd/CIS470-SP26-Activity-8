@@ -4,7 +4,7 @@
 const {lastDayOfMonth} = require('./lastDayOfMonth');
 
 function getPreviousDate(month, day, year) {
-    if (day > 0) {
+    if (day > 1) {
         return { month, day: day - 1, year };
     } else {
         if (month > 1) {
