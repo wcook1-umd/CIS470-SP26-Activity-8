@@ -213,12 +213,19 @@ Complete the following table:
 
 | Node | Unit Name       | Predecessors | Successors |
 |------|-----------------|--------------|------------|
-| 1    | Main            | (None)       |            |
-| 2    | isValidDate     |              |            |
-| 3    |                 |              |            |
-| 4    |                 |              |            |
+| 1    | main            | (None)       | isValidDate, getNextDate, lastDayOfMonth, getPreviousDate, getZodiacSign, getDayOfWeek, friday13th |
+| 2    | isValidDate     | main         | lastDayOfMonth |
+| 3    | getNextDate     | main         | lastDayOfMonth |
+| 4    | lastDayOfMonth  | main, isValidDate, getNextDate, getPreviousDate | isLeap |
+| 5    | getPreviousDate | main         | lastDayOfMonth |
+| 6    | getZodiacSign   | main         | (None)         |
+| 7    | getDayOfWeek    | main, isFriday | (None)       |
+| 8    | friday13th      | main         | isFriday       |
+| 9    | isLeap          | lastDayOfMonth | (None)       |
+| 10   | isFriday        | friday13th   | getDayOfWeek   |
 
 ...
+
 
 
 ## Final Note: It is OK if your tests do not have full coverage in this activity.
